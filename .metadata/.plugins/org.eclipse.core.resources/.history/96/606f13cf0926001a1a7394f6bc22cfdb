@@ -1,0 +1,30 @@
+import java.util.Scanner;
+import java.lang.Math;
+
+public class NtermGP {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input =new Scanner(System.in);
+		System.out.println("enter the  first no:");
+		int A;
+		A= input.nextInt();
+		System.out.println("enter the  second no:");
+		int B;
+		B= input.nextInt();
+		System.out.println("enter the n term u want to find:");
+		int N;
+		N= input.nextInt();
+		CalculateN(A, B, N);
+	}
+
+	 static int CalculateN(int a, int b, int n) {
+		 int r,an;
+		    r=b/a;
+		    an=a*(Math.pow(r, n-1));
+		    return an;
+		
+	
+	}
+
+}

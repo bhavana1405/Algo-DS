@@ -1,0 +1,64 @@
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+
+//User function Template for Java
+
+/*Class Geeks with countSpecials as its member function
+* a : input array
+* n : size of array
+k : to calculate floor(n/k)
+*/
+
+class MyClass{
+    static void countSpecials(int a[], int n, int k){
+        int f = (int)Math.floor(n/k);
+        // your code here
+        int count=0;
+        Map<Integer,Integer> map1= new HashMap<>();
+        for(int i=0; i<n;i++){
+            if (map1.containsKey(a[i])){
+                map1.put(a[i],map1.get(a[i])+1);
+                
+            }
+            else{
+                map1.put(a[i],1);
+            }
+          if (map1.get(a[i]) == f) {
+                count++;
+          }
+          
+        }
+        
+         System.out.print(count+ " ");
+        
+    }
+}
+
+// { Driver Code Starts.
+
+// Driver class
+class FlourTimeArray {
+	public static void main (String[] args) {
+	    
+	    // Taking input through Scanner class
+		Scanner sc = new Scanner(System.in);
+		
+		int testcase = sc.nextInt();
+		
+		while(testcase-- > 0){
+		    int sizeof_array = sc.nextInt();
+		    int k = sc.nextInt();
+	
+		    int a[] = new int[sizeof_array];
+		    
+		    for(int i = 0;i<sizeof_array;i++){
+		        a[i] = sc.nextInt();
+		    }
+		    
+		    MyClass obj = new MyClass();
+		    obj.countSpecials(a, sizeof_array, k);
+		}
+		
+	}
+}  // } Driver Code Ends

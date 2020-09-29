@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class CelciusToFarenheight {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner input= new Scanner(System.in);
+System.out.print("Enter the temp in celcius: ");
+float number= input.nextFloat();
+System.out.println("You entered " + number);
+Farenheight(number);
+	}
+
+	static double Farenheight(float number) {
+		double F = 0.0 ;
+		F= {(number/5)*9+32};
+		return F;
+		// TODO Auto-generated method stub
+		
+	}
+
+}

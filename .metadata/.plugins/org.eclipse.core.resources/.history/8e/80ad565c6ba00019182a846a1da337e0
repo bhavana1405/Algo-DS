@@ -1,0 +1,19 @@
+package java8project;
+
+public class Earth {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Human tom;
+		tom= new Human();
+		tom.age= 12;
+		tom.heightininches= 134;
+		tom.eyecolor= "black";
+		tom.name= "sameer";
+		tom.Speak();
+		
+		
+
+	}
+
+}

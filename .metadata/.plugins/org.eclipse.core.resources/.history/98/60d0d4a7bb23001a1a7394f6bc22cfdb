@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class RootsOfQuadraticEquation {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner s = new Scanner(System.in);
+	      System.out.print("Enter a: ");
+	      int a = s.nextInt();
+	      System.out.print("Enter b: ");
+	      int b = s.nextInt();
+	      System.out.print("Enter c: ");
+	      int c = s.nextInt();
+	      Roots(a,b,c);
+	}
+
+	 static int Roots(int a, int b, int c) {
+		 
+		return x1,x2;
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -1,0 +1,16 @@
+package java8project;
+
+public class LearningArrays {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int values [] = new int[100];
+		values[2]= 1000;
+		values[99]= 200;
+		System.out.println(values[100]);
+		
+
+	}
+
+}

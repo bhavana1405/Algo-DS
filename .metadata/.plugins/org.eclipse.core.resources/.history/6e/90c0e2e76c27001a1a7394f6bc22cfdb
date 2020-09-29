@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class PrimeCheck {
+
+	public static void main(String[] args) {
+		Scanner input= new Scanner(System.in);
+		System.out.print("Enter the number: ");
+		int N= input.nextInt();
+		System.out.println("You entered " + N);
+		PrimeCheck check=new PrimeCheck();
+		System.out.println("Result " + check.Prime(N));
+	}
+public boolean Prime(int N) {
+	int i;
+	   // x=(int)(Math.sqrt(N)+1);
+	   //x=N/2;
+	    for(i=2;i<N;i++);
+	    {
+	        if(N % i == 0)
+	        
+	        {
+	            return false;
+	        }
+	     }
+	     
+	    return true; 
+}
+
+}

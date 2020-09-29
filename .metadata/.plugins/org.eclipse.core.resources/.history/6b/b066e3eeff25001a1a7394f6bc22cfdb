@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class DigitsInFact {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner input =new Scanner(System.in);
+		System.out.println("enter the no:");
+		int number;
+		number= input.nextInt();
+		Factorial(number);
+		
+
+	}
+
+	 static void Factorial(int number) {
+		
+		int i,fact=1, count=0,y;
+		if (number==0 || number==1){
+			 
+			System.out.println("1");
+		}
+		else
+		{
+				 for(i=1;i<=number;i++) {
+					 fact*=i; 
+				 }
+				
+	 System.out.print(fact);
+	  while(fact>0) {
+		 y=fact%10;
+		 count ++;
+		 fact=fact/10;
+		 
+	  }
+	  
+	  System.out.println("No of digits in factorial is:" + count);	
+	}
+	 }
+}

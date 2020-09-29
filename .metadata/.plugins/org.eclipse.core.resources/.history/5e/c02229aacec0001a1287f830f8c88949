@@ -1,0 +1,29 @@
+import java.io.*; 
+  
+class LinkedList { 
+    Node head; // head of list 
+  
+    /* Linked list Node*/
+    class Node { 
+        int data; 
+        Node next; 
+  
+        // Constructor to create a new node 
+        // Next is by default initialized 
+        // as null 
+        Node(int d) { data = d; } 
+    } 
+    void insertBegin(int x) {
+  	  Node temp= new Node(x);
+  	  temp next= head;
+  	  head= temp;
+    }
+}
+public class Test{
+	public static void main(String args[]) {
+		LinkedList l=new LinkedList();
+		l.insertBegin(5);
+		l.insertBegin(13);
+		l.insertBegin(39);
+	}
+}
